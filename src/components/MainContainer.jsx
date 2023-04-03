@@ -30,10 +30,10 @@ export default function MainContainer() {
     if (currentPage === 'Quote') {
         return <Quote />;
     }
-    if (currentPage == 'Gallery') {
+    if (currentPage === 'Gallery') {
         return <Gallery />
     }
-    if (currentPage == 'More') {
+    if (currentPage === 'More') {
         return <More />
     }
 

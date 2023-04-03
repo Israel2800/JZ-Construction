@@ -4,6 +4,20 @@ import { Container, Row, Col } from 'react-bootstrap';
 export default function Home({ handlePageChange }) {
 return (
 <section className="bg-white">
+    <section
+      className="d-flex align-items-center"
+      style={{
+        backgroundImage: 'url("https://via.placeholder.com/1200x800")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        height: '400px',
+      }}
+    >
+      <Container>
+        <h1 className="text-white">Making your vision become a reality</h1>
+        <p className="text-white">Making your vision become a reality</p>
+      </Container>
+    </section>
     <Container>
         <Row className="justify-content-center" style={{
             display: "flex",
