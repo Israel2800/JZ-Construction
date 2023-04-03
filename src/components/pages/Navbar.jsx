@@ -6,7 +6,10 @@ function Navbar({ handlePageChange }) {
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
         {/* Brand */}
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" 
+            href="#Home"
+            onClick={() => handlePageChange('Home')}
+        >
           My Website
         </a>
         {/* Toggler */}
@@ -23,7 +26,7 @@ function Navbar({ handlePageChange }) {
         </button>
         {/* Navbar items */}
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto flex-wrap flex-sm-nowrap">
+          <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <a
                 href="#Home"
