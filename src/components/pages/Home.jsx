@@ -22,27 +22,28 @@ return (
     </Container>
     </section>
     
-    <Container>
-        <Row className="align-items-center">
-          <Col md={6}>
-            <img
-              src="https://via.placeholder.com/400x400"
-              alt="Placeholder Image"
-              className="img-fluid"
-            />
-          </Col>
-          <Col md={6}>
-            <h2 className="text-white">Section Title</h2>
-            <p className="text-white">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              vel felis nec nulla tempus varius nec eu elit. Donec ullamcorper
-              vestibulum tellus, in finibus dolor bibendum ac. In hac habitasse
-              platea dictumst. Aenean at sapien eget augue bibendum porttitor.
+    <Container className="p-0" style={{ maxWidth: '100%' }}>
+      <Row className="align-items-center">
+        <Col md={6}>
+          <img
+            src="https://via.placeholder.com/400x400"
+            alt="Placeholder Image"
+            className="d-none d-md-block"
+            style={{ height: "100%", width: "100%" }}
+          />
+        </Col>
+        <Col md={6}>
+          <div className="d-md-none" style={{ height: "50vh" }}></div>
+          <div className="text-white">
+            <h2>Section Title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel felis nec nulla tempus varius nec eu elit. Donec ullamcorper vestibulum tellus, in finibus dolor bibendum ac. In hac habitasse platea dictumst. Aenean at sapien eget augue bibendum porttitor.
             </p>
             <button className="btn btn-primary">Learn More</button>
-          </Col>
-        </Row>
-      </Container>
+          </div>
+        </Col>
+      </Row>
+    </Container>
 
     <Container>
         <Row className="justify-content-center p-5" style={{
