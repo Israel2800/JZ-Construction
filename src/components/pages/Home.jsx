@@ -53,7 +53,7 @@ return (
         }}>
         
             <Card style={{ width: '18rem', margin: '8px' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Img variant="top" src="https://via.placeholder.com/400x400" />
                 <Card.Body>
                     <Card.Title>Card Title</Card.Title>
                     <Card.Text>
@@ -65,7 +65,7 @@ return (
             </Card>
 
             <Card style={{ width: '18rem', margin: '8px' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Img variant="top" src="https://via.placeholder.com/400x400" />
                 <Card.Body>
                     <Card.Title>Card Title</Card.Title>
                     <Card.Text>
@@ -77,7 +77,7 @@ return (
             </Card>
 
             <Card style={{ width: '18rem', margin: '8px' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Img variant="top" src="https://via.placeholder.com/400x400" />
                 <Card.Body>
                     <Card.Title>Card Title</Card.Title>
                     <Card.Text>
@@ -89,7 +89,7 @@ return (
             </Card>
 
             <Card style={{ width: '18rem', margin: '8px' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Img variant="top" src="https://via.placeholder.com/400x400" />
                 <Card.Body>
                     <Card.Title>Card Title</Card.Title>
                     <Card.Text>
