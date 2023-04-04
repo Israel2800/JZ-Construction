@@ -1,9 +1,11 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 export default function Home({ handlePageChange }) {
 return (
-<section className="bg-white">
+<section className="bg-dark">
     <section
         className="d-flex align-items-center"
         style={{
@@ -21,43 +23,85 @@ return (
     </section>
     
     <Container>
-        <Row className="justify-content-center" style={{
+        <Row className="align-items-center">
+          <Col md={6}>
+            <img
+              src="https://via.placeholder.com/400x400"
+              alt="Placeholder Image"
+              className="img-fluid"
+            />
+          </Col>
+          <Col md={6}>
+            <h2 className="text-white">Section Title</h2>
+            <p className="text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              vel felis nec nulla tempus varius nec eu elit. Donec ullamcorper
+              vestibulum tellus, in finibus dolor bibendum ac. In hac habitasse
+              platea dictumst. Aenean at sapien eget augue bibendum porttitor.
+            </p>
+            <button className="btn btn-primary">Learn More</button>
+          </Col>
+        </Row>
+      </Container>
+
+    <Container>
+        <Row className="justify-content-center p-5" style={{
             display: "flex",
             flexWrap: "wrap",
-            marginRight: "-.5rem",
-            marginLeft: "-.5rem",
-            marginTop: "var(--bs-gutter-y)",
+            margin: "-8px", /* add negative margin to the row */
         }}>
-        <Col md={6} className="my-3">
-            <img
-                src="https://via.placeholder.com/500x300"
-                alt="Construction image 1"
-                className="img-fluid"
-            />
-        </Col>
-        <Col md={6} className="my-3">
-        <img
-                src="https://via.placeholder.com/500x300"
-                alt="Construction image 2"
-                className="img-fluid"
-                />
-        </Col>
-        <Col md={6} className="my-3">
-        <img
-                src="https://via.placeholder.com/500x300"
-                alt="Construction image 3"
-                className="img-fluid"
-                />
-        </Col>
-        <Col md={6} className="my-3">
-        <img
-                src="https://via.placeholder.com/500x300"
-                alt="Construction image 4"
-                className="img-fluid"
-                />
-        </Col>
+        
+            <Card style={{ width: '18rem', margin: '8px' }}>
+                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                        Some quick example text to build on the card title and make up the
+                        bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                </Card.Body>
+            </Card>
+
+            <Card style={{ width: '18rem', margin: '8px' }}>
+                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                        Some quick example text to build on the card title and make up the
+                        bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                </Card.Body>
+            </Card>
+
+            <Card style={{ width: '18rem', margin: '8px' }}>
+                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                        Some quick example text to build on the card title and make up the
+                        bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                </Card.Body>
+            </Card>
+
+            <Card style={{ width: '18rem', margin: '8px' }}>
+                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                        Some quick example text to build on the card title and make up the
+                        bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                </Card.Body>
+            </Card>
+
         </Row>
     </Container>
+   
     
 </section>
 );
