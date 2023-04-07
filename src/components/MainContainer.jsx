@@ -8,7 +8,7 @@ import About from "./pages/About";
 // import Quote from "./pages/Quote";
 // import Gallery from "./pages/Gallery";
 // import More from "./pages/More";
-// import Footer from "./pages/Footer";
+import Footer from "./pages/Footer";
 import '../App'
 
 export default function MainContainer() {
