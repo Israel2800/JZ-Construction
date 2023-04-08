@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { services } from '../../data';
 
 export default function Home({ handlePageChange }) {
 return (
@@ -22,18 +23,17 @@ return (
     </Container>
     </section>
     
-    <Container className="p-0" style={{ maxWidth: '100%' }}>
+    <Container className="" style={{ maxWidth: '100%' }}>
       <Row className="align-items-center">
-        <Col md={6}>
+        <Col md={6} className = "p-0">
           <img
             src="https://via.placeholder.com/400x400"
             alt="Placeholder Image"
-            className="d-none d-md-block"
-            style={{ height: "100%", width: "100%" }}
+            className=""
+            style={{ height: '350px', width: "100%" }}
           />
         </Col>
-        <Col md={6}>
-          <div className="d-md-none" style={{ height: "50vh" }}></div>
+        <Col md={6} className = "p-4">
           <div className="text-white">
             <h2>Section Title</h2>
             <p>
@@ -45,74 +45,33 @@ return (
       </Row>
     </Container>
 
-    <Container>
-        <Row className="justify-content-center p-5" style={{
-            display: "flex",
-            flexWrap: "wrap",
-            margin: "-8px", /* add negative margin to the row */
-        }}>
-        
-            <Card style={{ width: '18rem', margin: '8px' }}>
-                <Card.Img variant="top" src="https://via.placeholder.com/400x400" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-            </Card>
+    <Container className="d-flex flex-wrap p-4">
+        {services.map((service) => (
+            <a key={service.image} className="col-sm-6 w-80 p-4 text-decoration-none">
+                <Card className = "border-0 p-0" 
+                    style={{ 
+                        width: '', 
+                        margin: '' 
+                    }}>
+                    <Card.Img
+                        src={service.image}
+                    />
+                    <Card.Body>
+                        <Card.Title>
+                            {service.title}
+                        </Card.Title>
+                        <Card.Text>
+                            {service.description}
+                        </Card.Text>
+                        <Button>
+                            {service.button}
+                        </Button>
+                    </Card.Body>
+                </Card>
+            </a>
+        ))}
 
-            <Card style={{ width: '18rem', margin: '8px' }}>
-                <Card.Img variant="top" src="https://via.placeholder.com/400x400" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-            </Card>
 
-            <Card style={{ width: '18rem', margin: '8px' }}>
-                <Card.Img variant="top" src="https://via.placeholder.com/400x400" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-            </Card>
-
-            <Card style={{ width: '18rem', margin: '8px' }}>
-                <Card.Img variant="top" src="https://via.placeholder.com/400x400" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-            </Card>
-            
-            <Card style={{ width: '18rem', margin: '8px' }}>
-                <Card.Img variant="top" src="https://via.placeholder.com/400x400" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-            </Card>
-
-        </Row>
     </Container>
    
     
