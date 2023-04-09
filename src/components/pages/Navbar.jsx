@@ -22,7 +22,7 @@ function Navbar({ handlePageChange }) {
   }, []);
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <nav className="navbar navbar-expand-md navbar-light bg-light sticky-top">
       <div className="container-fluid">
         {/* Brand */}
         <a className="navbar-brand" 
