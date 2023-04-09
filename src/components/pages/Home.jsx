@@ -28,7 +28,7 @@ export default function Home({ handlePageChange }) {
                     backgroundImage: `linear-gradient(rgba(26, 35, 126, 0.2), rgba(26, 35, 126, 0.6)), url(${service4})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
-                    backgroundAttachment: 'fixed',
+                    backgroundRepeat: "no-repeat",
                     height: '100vh',
                 }}
             >
