@@ -57,29 +57,29 @@ function Navbar({ handlePageChange }) {
             </li>
             <li className="nav-item">
               <a
-                href="#Services"
-                className="nav-link"
-                onClick={() => handlePageChange('Services')}
-              >
-                Services
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
                 href="#About"
                 className="nav-link"
-                onClick={() => handlePageChange('About')}
+                // onClick={() => handlePageChange('About')}
               >
                 About
               </a>
             </li>
             <li className="nav-item">
               <a
-                href="#Testimonials"
+                href="#Services"
                 className="nav-link"
-                onClick={() => handlePageChange('Testimonials')}
+                // onClick={() => handlePageChange('Services')}
               >
-                Testimonials
+                Services
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                href="#Gallery"
+                className="nav-link"
+                // onClick={() => handlePageChange('Gallery')}
+              >
+                Gallery
               </a>
             </li>
             <li className="nav-item">
@@ -93,18 +93,18 @@ function Navbar({ handlePageChange }) {
             </li>
             <li className="nav-item">
               <a
-                href="#Gallery"
+                href="#Testimonials"
                 className="nav-link"
-                onClick={() => handlePageChange('Gallery')}
+                // onClick={() => handlePageChange('Testimonials')}
               >
-                Gallery
+                Testimonials
               </a>
             </li>
             <li className="nav-item">
               <a
                 href="#More"
                 className="nav-link"
-                onClick={() => handlePageChange('More')}
+                // onClick={() => handlePageChange('More')}
               >
                 More
               </a>

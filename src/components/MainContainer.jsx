@@ -12,7 +12,7 @@ import About from "./pages/About";
 import '../App'
 
 export default function MainContainer() {
-    const [currentPage, setCurrentPage] = useState('');
+    const [currentPage, setCurrentPage] = useState('Home');
 
     const renderPage = () => {
     if (currentPage === 'Home') {
