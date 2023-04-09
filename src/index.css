@@ -92,3 +92,10 @@ img.img-fluid:hover {
 .bg-gray {
   background-color: #f2f2f2;
 }
+
+
+@media (max-width: 768px) {
+  .img-small-devices {
+    background-size: contain;
+  }
+}

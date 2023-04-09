@@ -13,8 +13,8 @@ import Quote from "../pages/Quote";
 import HouseSidingIcon from '@mui/icons-material/HouseSiding';
 
 // import { FaRegBuilding, FaHardHat, FaClock } from 'react-icons/fa';
-import service1 from "../../assets/images/service1.jpeg";
 import service4 from "../../assets/images/service4.jpeg";
+
 
 // import { useContext } from 'react';
 // import { ThemeContext } from '../../ThemeContext';
@@ -31,9 +31,9 @@ export default function Home({ handlePageChange }) {
     return (
         <section className="bg-white" id="Home">
             <section
-                className="d-flex align-items-center"
+                className="d-flex align-items-center img-small-devices"
                 style={{
-                    backgroundImage: `linear-gradient(rgba(26, 35, 126, 0.2), rgba(26, 35, 126, 0.6)), url(${service1})`,
+                    backgroundImage: `linear-gradient(rgba(26, 35, 126, 0.2), rgba(26, 35, 126, 0.6)), url(${service4})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundAttachment: 'fixed',
