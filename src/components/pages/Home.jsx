@@ -15,18 +15,10 @@ import HouseSidingIcon from '@mui/icons-material/HouseSiding';
 // import { FaRegBuilding, FaHardHat, FaClock } from 'react-icons/fa';
 import service4 from "../../assets/images/service4.jpeg";
 
-
-// import { useContext } from 'react';
-// import { ThemeContext } from '../../ThemeContext';
+import service1 from "../../assets/images/service1.jpeg";
 
 export default function Home({ handlePageChange }) {
-    // const context = useContext(ThemeContext);
 
-    // if (!context) {
-    //     return null;
-    // }
-
-    // const { darkMode } = context;
 
     return (
         <section className="bg-white" id="Home">
