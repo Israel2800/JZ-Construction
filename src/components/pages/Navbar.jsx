@@ -1,118 +1,61 @@
 import React, { useEffect, useState } from 'react';
+import { Navbar, Nav } from 'react-bootstrap';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import service1 from '../../assets/service1.jpeg';
 
-function Navbar({ handlePageChange }) {
-  const [navbarClass, setNavbarClass] = useState('navbar navbar-expand-lg navbar-light bg-light'); // set the initial class for the navbar
+export default function MainNavbar({ handlePageChange }) {
+  const [expanded, setExpanded] = useState(false);
 
-  useEffect(() => {
-    // add an event listener to the window object to detect scroll events
-    window.addEventListener('scroll', () => {
-      // get the current scroll position
-      const scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+  // const [navbarClass, setNavbarClass] = useState('navbar navbar-expand-lg navbar-light bg-light'); // set the initial class for the navbar
 
-      // if the user has scrolled down, add the "scrolled" class to the navbar
-      if (scrollPos > 0) {
-        setNavbarClass('navbar navbar-expand-lg navbar-light scrolled'); // add the "scrolled" class
-      } else {
-        setNavbarClass('navbar navbar-expand-lg navbar-light bg-light'); // remove the "scrolled" class
-      }
-    });
-  }, []);
+  // useEffect(() => {
+  //   // add an event listener to the window object to detect scroll events
+  //   window.addEventListener('scroll', () => {
+  //     // get the current scroll position
+  //     const scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+  //     // if the user has scrolled down, add the "scrolled" class to the navbar
+  //     if (scrollPos > 0) {
+  //       setNavbarClass('navbar navbar-expand-lg navbar-light scrolled'); // add the "scrolled" class
+  //     } else {
+  //       setNavbarClass('navbar navbar-expand-lg navbar-light bg-light'); // remove the "scrolled" class
+  //     }
+  //   });
+  // }, []);
 
   return (
-    <nav className="navbar navbar-expand-md navbar-light bg-light sticky-top">
-      <div className="container-fluid">
-        {/* Brand */}
-        <a className="navbar-brand" 
-            href="#Home"
-            onClick={() => handlePageChange('Home')}
-        >
-          J & Z CONSTRUCTION
-        </a>
-        {/* Toggler */}
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        {/* Navbar items */}
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <a
-                href="#Home"
-                className="nav-link"
-                onClick={() => handlePageChange('Home')}
-              >
-                Home
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                href="#About"
-                className="nav-link"
-                // onClick={() => handlePageChange('About')}
-              >
-                About
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                href="#Services"
-                className="nav-link"
-                // onClick={() => handlePageChange('Services')}
-              >
-                Services
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                href="#Gallery"
-                className="nav-link"
-                // onClick={() => handlePageChange('Gallery')}
-              >
-                Gallery
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                href="#Quote"
-                className="nav-link"
-                onClick={() => handlePageChange('Quote')}
-              >
-                Quote
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                href="#Testimonials"
-                className="nav-link"
-                // onClick={() => handlePageChange('Testimonials')}
-              >
-                Testimonials
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                href="#More"
-                className="nav-link"
-                // onClick={() => handlePageChange('More')}
-              >
-                More
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <Navbar expand="md" fixed="top" expanded={expanded} className="navbar-light bg-light px-4">
+      <Navbar.Brand href="#Home" onClick={() => handlePageChange('Home')}>
+        J &amp; Z CONSTRUCTION
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="navbar-nav" onClick={() => setExpanded(expanded ? false : 'expanded')} />
+      <Navbar.Collapse id="navbar-nav">
+        <Nav className="ms-auto">
+          <Nav.Link href="#Home" 
+          onClick={() => { handlePageChange('Home'); setExpanded(false) }}
+          >Home</Nav.Link>
+          <Nav.Link href="#About" 
+          // onClick={() => { handlePageChange('About'); setExpanded(false) }}
+          >About</Nav.Link>
+          <Nav.Link href="#Services" 
+          // onClick={() => { handlePageChange('Services'); setExpanded(false) }}
+          >Services</Nav.Link>
+          <Nav.Link href="#Gallery" 
+          // onClick={() => { handlePageChange('Gallery'); setExpanded(false) }}
+          >Gallery</Nav.Link>
+          <Nav.Link href="#Quote" 
+          onClick={() => { handlePageChange('Quote'); setExpanded(false) }}
+          >Quote</Nav.Link>
+          <Nav.Link href="#Testimonials" 
+          // onClick={() => { handlePageChange('Testimonials'); setExpanded(false) }}
+          >Testimonials</Nav.Link>
+          <Nav.Link href="#More" 
+          // onClick={() => { handlePageChange('More'); setExpanded(false) }}
+          >More</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 }
 
@@ -123,7 +66,7 @@ function Navbar({ handlePageChange }) {
 // import Navbar from 'react-bootstrap/Navbar';
 // import NavDropdown from 'react-bootstrap/NavDropdown';
 
-// function BasicExample() {
+// export default function Navbar2({ handlePageChange }) {
 //   return (
 //     <Navbar bg="light" expand="lg">
 //       <Container>
@@ -151,4 +94,3 @@ function Navbar({ handlePageChange }) {
 //   );
 // }
 
-// export default BasicExample;

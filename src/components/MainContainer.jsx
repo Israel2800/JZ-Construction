@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { BrowserRouter as Router } from "react-router-dom";
-import Navbar from './pages/Navbar';
+import MainNavbar from './pages/Navbar';
 import Home from "./pages/Home";
 // import Services from "./pages/Services";
 import About from "./pages/About";
@@ -9,7 +9,7 @@ import About from "./pages/About";
 import Quote from './pages/Quote';
 // import Gallery from "./pages/Gallery";
 // import More from "./pages/More";
-// import Footer from "./pages/Footer";
+import Footer from "./pages/Footer";
 import '../App'
 
 export default function MainContainer() {
@@ -48,13 +48,13 @@ export default function MainContainer() {
         <Router>
         
                 {/* We are passing the currentPage from state and the function to update it */}
-                <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
+                <MainNavbar currentPage={currentPage} handlePageChange={handlePageChange} />
                 {/* <About currentPage={currentPage} handlePageChange={handlePageChange} /> */}
 
                 {/* Here we are calling the renderPage method which will return a component  */}
                 {renderPage()}
                 
-                {/* <Footer /> */}
+                <Footer />
         </Router>
     </main>
 
