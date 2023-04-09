@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/JZ-Construction/static/css/main.c81275de.css",
-    "main.js": "/JZ-Construction/static/js/main.e69801b0.js",
+    "main.js": "/JZ-Construction/static/js/main.30df7a81.js",
     "static/media/service3.jpeg": "/JZ-Construction/static/media/service3.76634f899a07b13a1020.jpeg",
     "static/media/service2.jpeg": "/JZ-Construction/static/media/service2.ae70f66c7df2706dfc62.jpeg",
     "static/media/service5.jpeg": "/JZ-Construction/static/media/service5.15f913b6f04c91f19c27.jpeg",
     "static/media/service1.jpeg": "/JZ-Construction/static/media/service1.f6505060105b204cbd00.jpeg",
     "static/media/service4.jpeg": "/JZ-Construction/static/media/service4.f6505060105b204cbd00.jpeg",
+    "static/media/logo.jpeg": "/JZ-Construction/static/media/logo.8f456f85759de1c1352d.jpeg",
     "index.html": "/JZ-Construction/index.html",
     "main.c81275de.css.map": "/JZ-Construction/static/css/main.c81275de.css.map",
-    "main.e69801b0.js.map": "/JZ-Construction/static/js/main.e69801b0.js.map"
+    "main.30df7a81.js.map": "/JZ-Construction/static/js/main.30df7a81.js.map"
   },
   "entrypoints": [
     "static/css/main.c81275de.css",
-    "static/js/main.e69801b0.js"
+    "static/js/main.30df7a81.js"
   ]
 }
