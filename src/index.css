@@ -96,7 +96,9 @@ img.img-fluid:hover {
 
 @media (max-width: 768px) {
   .img-small-devices {
-    background-size: contain;
-
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll; */
   }
 }

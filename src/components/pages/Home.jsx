@@ -29,7 +29,7 @@ export default function Home({ handlePageChange }) {
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundAttachment: 'fixed',
-                    height: '550px',
+                    height: '100vh',
                 }}
             >
                 <Container>
