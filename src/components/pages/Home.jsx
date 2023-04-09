@@ -109,8 +109,8 @@ export default function Home({ handlePageChange }) {
             </section>
             <section className="bg-dark text-white">
                 <Container className="py-5">
-                    <h2 className="text-center mb-5">Why Choose Us</h2>
-                    <Row className="justify-content-center">
+                    <h2 className="text-center mt-5">Why Choose Us</h2>
+                    <Row className="justify-content-center mt-5 mb-4">
                         <Col xs={10} md={4} className="text-center mb-4">
                             <FaHardHat size={50} className="mb-4" />
                             <h4>Experienced</h4>
