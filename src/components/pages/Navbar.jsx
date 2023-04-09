@@ -36,19 +36,19 @@ export default function MainNavbar({ handlePageChange }) {
           onClick={() => { handlePageChange('Home'); setExpanded(false) }}
           >Home</Nav.Link>
           <Nav.Link href="#About" 
-          // onClick={() => { handlePageChange('About'); setExpanded(false) }}
+          onClick={() => { handlePageChange('About'); setExpanded(false) }}
           >About</Nav.Link>
           <Nav.Link href="#Services" 
-          // onClick={() => { handlePageChange('Services'); setExpanded(false) }}
+          onClick={() => { handlePageChange('Services'); setExpanded(false) }}
           >Services</Nav.Link>
           <Nav.Link href="#Gallery" 
-          // onClick={() => { handlePageChange('Gallery'); setExpanded(false) }}
+          onClick={() => { handlePageChange('Gallery'); setExpanded(false) }}
           >Gallery</Nav.Link>
           <Nav.Link href="#Quote" 
           onClick={() => { handlePageChange('Quote'); setExpanded(false) }}
           >Quote</Nav.Link>
           <Nav.Link href="#Testimonials" 
-          // onClick={() => { handlePageChange('Testimonials'); setExpanded(false) }}
+          onClick={() => { handlePageChange('Testimonials'); setExpanded(false) }}
           >Testimonials</Nav.Link>
           <Nav.Link href="#More" 
           // onClick={() => { handlePageChange('More'); setExpanded(false) }}

@@ -1,12 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { services } from '../../data';
 import { images } from '../../data';
 import { testimonials } from '../../data';
 import { FaHardHat, FaTools, FaShieldAlt, FaComments } from 'react-icons/fa';
 import { FaQuoteLeft, FaStar } from "react-icons/fa";
+import Quote from "../pages/Quote";
 // import ConstructionIcon from './ConstructionIcon';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
 // import { faConstruction } from '@fortawesome/free-solid-svg-icons';
 import HouseSidingIcon from '@mui/icons-material/HouseSiding';
 
@@ -31,17 +33,34 @@ export default function Home({ handlePageChange }) {
             <section
                 className="d-flex align-items-center"
                 style={{
-                    backgroundImage: `url(${service1})`,
+                    backgroundImage: `linear-gradient(rgba(26, 35, 126, 0.2), rgba(26, 35, 126, 0.6)), url(${service1})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
-                    backgroundAttachment: 'fixed', /* keeps the background fixed while scrolling */
-                    height: '480px',
+                    backgroundAttachment: 'fixed',
+                    height: '550px',
                 }}
             >
-            <Container>
-                <h1 className="text-white">MAKING YOUR VISION BECOME A REALITY</h1>
-                <p className="text-white">MORE THAN 10 YEARS OF EXPERIENCE</p>
-            </Container>
+                <Container>
+                    <h1 className="text-white">MAKING YOUR VISION BECOME A REALITY</h1>
+                    <p className="text-white">MORE THAN 10 YEARS OF EXPERIENCE</p>
+                    <Button
+                        className='my-2'
+                        variant="primary"
+                        size=""
+                        style={{
+                            backgroundColor: '#fff',
+                            border: 'none',
+                            borderRadius: '0px',
+                            padding: '10px 20px',
+                            color: '#1a237e',
+                            fontWeight: 'bold',
+                        }}
+                        href="#Services"
+                        // target="_blank"
+                    >
+                        Learn More
+                    </Button>
+                </Container>
             </section>
             
             <section id="About">
@@ -154,15 +173,17 @@ export default function Home({ handlePageChange }) {
                     <Container className="d-flex flex-column align-items-center justify-content-center">
                         <h2 className="text-white mb-4">Contact Us Today for a FREE Estimation</h2>
                         <p className="text-white mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel felis nec nulla tempus varius nec eu elit. Donec ullamcorper vestibulum tellus, in finibus dolor bibendum ac.</p>
-                        <Button variant="primary" size="" 
-                            style={{ 
-                                backgroundColor: "#1a237e", 
-                                border: "none", 
-                                borderRadius: "0px", 
-                                padding: "10px 20px",
-                            }}>
-                            Contact Now
-                        </Button>
+                        <Link to={Quote}>
+                            <Button variant="primary" size="" 
+                                style={{ 
+                                    backgroundColor: "#1a237e", 
+                                    border: "none", 
+                                    borderRadius: "0px", 
+                                    padding: "10px 20px",
+                                }}>
+                                Contact Now
+                            </Button>
+                        </Link>
                     </Container>
                 </div>
             </section>

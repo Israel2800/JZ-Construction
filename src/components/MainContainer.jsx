@@ -20,19 +20,19 @@ export default function MainContainer() {
         return <Home />;
     }
     if (currentPage ==='Services') {
-        return <Services />;
+        return <Home />;
     }
     if (currentPage === 'About') {
-        return <About />;
+        return <Home />;
     }
     if (currentPage === 'Testimonials') {
-        return <Testimonials />;
+        return <Home />;
     }
     if (currentPage === 'Quote') {
         return <Quote />;
     }
     if (currentPage === 'Gallery') {
-        return <Gallery />
+        return <Home />
     }
     if (currentPage === 'More') {
         return <More />
