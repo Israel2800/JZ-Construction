@@ -4,6 +4,7 @@ import service3 from './assets/images/service3.jpeg';
 import service4 from './assets/images/service4.jpeg';
 import service5 from './assets/images/service5.jpeg';
 import service6 from './assets/images/service6.jpeg';
+import service7 from './assets/images/service7.jpeg';
 
 
 
@@ -69,12 +70,17 @@ export const images = [
     {
         id: 6,
         title: 'Roller 6',
-        imageUrl: service1,
+        imageUrl: service6,
     },
     {
         id: 7,
-        title: 'Roller 6',
-        imageUrl: service1,
+        title: 'Roller 7',
+        imageUrl: service7,
+    },
+    {
+        id: 8,
+        title: 'Roller 8',
+        imageUrl: service8,
     },
 ]
 
