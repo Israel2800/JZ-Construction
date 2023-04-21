@@ -72,16 +72,7 @@ export const images = [
         title: 'Roller 6',
         imageUrl: service6,
     },
-    {
-        id: 7,
-        title: 'Roller 7',
-        imageUrl: service7,
-    },
-    {
-        id: 8,
-        title: 'Roller 8',
-        imageUrl: service8,
-    },
+    
 ]
 
 export const testimonials = [
