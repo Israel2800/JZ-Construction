@@ -92,6 +92,6 @@ export const testimonials = [
         id: 3,
         rating: 5,
         comment: "Donec ullamcorper vestibulum tellus, in finibus dolor bibendum ac.",
-        // name: "Bob Smith",
+        name: "Bob Smith",
     },
 ];
