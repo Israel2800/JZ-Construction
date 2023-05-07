@@ -3,7 +3,7 @@ import service2 from './assets/images/service2.jpeg';
 import service3 from './assets/images/service3.jpeg';
 import service4 from './assets/images/service4.jpeg';
 import service5 from './assets/images/service5.jpeg';
-import service6 from './assets/images/service6.jpeg';
+import service6 from './assets/images/gallery2.jpeg';
 // import service7 from './assets/images/service7.jpeg';
 
 

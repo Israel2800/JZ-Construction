@@ -50,28 +50,5 @@ export default function Footer() {
             </div>
         </footer>
       );
-//   return (
-//     <footer className="bg-light text-center text-lg-start">
-//       <div className="container">
-//         <div className="row align-items-center justify-content-between mb-4">
-//           <div className="col-lg-2">
-//             <img src="path/to/logo.png" alt="Company Logo" className="img-fluid" />
-//           </div>
-//           <div className="col-lg-4">
-//             <p className="lead mb-0">Office Hours: Monday-Saturday, 7am-7pm</p>
-//           </div>
-//           <div className="col-lg-3">
-//             <div className="d-flex justify-content-lg-end">
-//               <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="me-3 text-dark"><FaFacebookSquare size={24} /></a>
-//               <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="me-3 text-dark"><FaInstagram size={24} /></a>
-//               <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="text-dark"><FaGoogle size={24} /></a>
-//             </div>
-//           </div>
-//         </div>
-//         <div className="text-center py-3">
-//           <p className="mb-0">&copy; {new Date().getFullYear()} Company Name. All rights reserved.</p>
-//         </div>
-//       </div>
-//     </footer>
-//   );
+
 }
