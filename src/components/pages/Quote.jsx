@@ -2,28 +2,36 @@ import React, { useState } from "react";
 import { Form, Button, Row, Col, Container, ListGroup  } from "react-bootstrap";
 import Home from "./Home";
 import service4 from "../../assets/images/service4.jpeg";
+const sendMail = require("./services/sendMail");
 
 
 export default function Quote() {
-        const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    service: "",
-    comments: "",
-  });
+//         const [formData, setFormData] = useState({
+//     name: "",
+//     phone: "",
+//     email: "",
+//     service: "",
+//     comments: "",
+//   });
 
-  const handleInputChange = (event) => {
-    setFormData({
-      ...formData,
-      [event.target.name]: event.target.value,
-    });
-  };
+//   const handleInputChange = (event) => {
+//     setFormData({
+//       ...formData,
+//       [event.target.name]: event.target.value,
+//     });
+//   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log(formData);
-  };
+//   const handleSubmit = (event) => {
+//     event.preventDefault();
+//     console.log(formData);
+//   };
+
+const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log(formData);
+        sendMail(formData);
+};
+      
 
   return (
        
