@@ -26,11 +26,11 @@ export default function Quote() {
 //     console.log(formData);
 //   };
 
-const handleSubmit = (event) => {
-        event.preventDefault();
-        console.log(formData);
-        sendMail(formData);
-};
+// const handleSubmit = (event) => {
+//         event.preventDefault();
+//         console.log(formData);
+//         sendMail(formData);
+// };
       
 
   return (
