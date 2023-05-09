@@ -94,7 +94,7 @@ export default function Home({ handlePageChange }) {
                     </Row>
                 </Container>
             </section>
-            <section id="Services">
+            {/* <section id="Services">
                 <div className='bg-gray'>
                     <Container className="d-flex flex-wrap p-4 align-items-center justify-content-center">
                             <p className='w-100 text-center m-2 text-dark' style={{ fontWeight: 'bold', fontSize: '32px' }}>Our Services</p>
@@ -117,7 +117,37 @@ export default function Home({ handlePageChange }) {
                         ))}
                     </Container>
                 </div>
-            </section>
+            </section> */}
+    
+    <section id="Services">
+        <div className="bg-gray">
+            <Container className="p-4">
+            <Row>
+                <Col>
+                <h2 className="text-center font-weight-bold mb-4">Our Services</h2>
+                <p className="text-center mb-4">
+                    We provide services that set high standards for quality, reliability, durability and value for money
+                </p>
+                </Col>
+            </Row>
+            <Row className="justify-content-center">
+                {services.map((service) => (
+                <Col xs={12} md={6} lg={4} key={service.title}>
+                    <Card className="border-0 p-0 m-2" style={{ width: '18rem' }}>
+                    <Card.Img variant="top" src={service.image} style={{ height: '260px' }} />
+                    <Card.Body className="p-2 d-flex flex-column justify-content-center text-dark m-3">
+                        <Card.Title className="text-center">{service.title}</Card.Title>
+                        <Card.Text className="text-justify">{service.description}</Card.Text>
+                        <Button style={{ fontSize: '14px', padding: '5px 8px' }}>{service.button}</Button>
+                    </Card.Body>
+                    </Card>
+                </Col>
+                ))}
+            </Row>
+            </Container>
+        </div>
+    </section>
+
             <section className="bg-dark text-white">
                 <Container className="py-5">
                     <h2 className="text-center mt-5">Why Choose Us</h2>
