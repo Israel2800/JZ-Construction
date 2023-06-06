@@ -7,9 +7,7 @@ import { testimonials } from '../../data';
 import { FaHardHat, FaTools, FaShieldAlt, FaComments } from 'react-icons/fa';
 import { FaQuoteLeft, FaStar } from "react-icons/fa";
 import Quote from "../pages/Quote";
-// import ConstructionIcon from './ConstructionIcon';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
-// import { faConstruction } from '@fortawesome/free-solid-svg-icons';
+import { faConstruction } from '@fortawesome/free-solid-svg-icons';
 import HouseSidingIcon from '@mui/icons-material/HouseSiding';
 
 // import { FaRegBuilding, FaHardHat, FaClock } from 'react-icons/fa';
