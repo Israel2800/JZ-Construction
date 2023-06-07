@@ -7,22 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function MainNavbar({ handlePageChange }) {
   const [expanded, setExpanded] = useState(false);
 
-  // const [navbarClass, setNavbarClass] = useState('navbar navbar-expand-lg navbar-light bg-light'); // set the initial class for the navbar
-
-  // useEffect(() => {
-  //   // add an event listener to the window object to detect scroll events
-  //   window.addEventListener('scroll', () => {
-  //     // get the current scroll position
-  //     const scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-
-  //     // if the user has scrolled down, add the "scrolled" class to the navbar
-  //     if (scrollPos > 0) {
-  //       setNavbarClass('navbar navbar-expand-lg navbar-light scrolled'); // add the "scrolled" class
-  //     } else {
-  //       setNavbarClass('navbar navbar-expand-lg navbar-light bg-light'); // remove the "scrolled" class
-  //     }
-  //   });
-  // }, []);
+  
 
   return (
     <Navbar expand="md" fixed="top" expanded={expanded} className="navbar-light bg-light px-4">
