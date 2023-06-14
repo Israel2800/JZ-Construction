@@ -10,7 +10,7 @@ import Quote from "../pages/Quote";
 import { faConstruction } from '@fortawesome/free-solid-svg-icons';
 import HouseSidingIcon from '@mui/icons-material/HouseSiding';
 
-// import { FaRegBuilding, FaHardHat, FaClock } from 'react-icons/fa';
+import { FaRegBuilding, FaHardHat, FaClock } from 'react-icons/fa';
 import service4 from "../../assets/images/service4.jpeg";
 
 import service1 from "../../assets/images/service1.jpeg";
