@@ -42,11 +42,11 @@ export const services = [
 ] 
 
 export const images = [
-    {
+    /*{
         id: 1,
         title: 'Roller 1',
         imageUrl: service1,
-    },
+    },*/
     {
         id: 2,
         title: 'Roller 2',
